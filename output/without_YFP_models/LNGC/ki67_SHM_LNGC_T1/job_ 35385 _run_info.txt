@@ -1,2 +1,0 @@
-"x"
-"1" "Time =  ##------ Thu Aug 22 02:16:50 2019 ------## || Job ID =  35385 || Modelname =  ki67_SHM_LNGC || crude_loo_ic =  74.3568394314362 || Host =  eorsa || Nodes =  harris || Process_ID = P 0"

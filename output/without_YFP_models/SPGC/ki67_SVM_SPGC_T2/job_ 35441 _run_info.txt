@@ -1,2 +1,0 @@
-"x"
-"1" "Time =  ##------ Sat Aug 24 14:29:54 2019 ------## || Job ID =  35441 || Modelname =  ki67_SVM_SPGC || crude_loo_ic =  50.5564298084265 || Host =  canna || Nodes =  canna || Process_ID = P 0"

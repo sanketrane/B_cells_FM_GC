@@ -1,4 +1,0 @@
-"x"
-"1" "Time =  ##------ Wed Aug 21 16:26:42 2019 ------## || Job ID =   || Modelname =  ki67_SHM_FM || crude_loo_ic =  21.9373472828899 || Host =   || Nodes =  eigg || Process_ID = P "
-"x"
-"1" "Time =  ##------ Thu Aug 22 12:27:48 2019 ------## || Job ID =   || Modelname =  ki67_SHM_FM || crude_loo_ic =  21.9773913569394 || Host =   || Nodes =  eigg || Process_ID = P "
