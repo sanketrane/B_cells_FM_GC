@@ -15,7 +15,7 @@ Models tested here:
     Kinetic heterogeneity model (KHM): Fast and Slow (with respect to their division and turnover) subsets within host and donor compartments.
     Incumbnet model (INC): Fast and Slow (pre-existing) subsets only within host.
 
-We also tried variations withing each model by comnparing different sources, by varying the rate of change of source influx with time and by keeping the rate of loss of Ki67 (beta) either free or fixed (1/3.5 days). Models begining with QSS (quassi steady state) assume that the total size of the FM compartment stays constant i.e. N(t) = N0.
+We also tried variations withing each model by comparing different sources, by varying the rate of change of source influx with time and by keeping the rate of loss of Ki67 (beta) either free or fixed (1/3.5 days). Models begining with QSS (quassi steady state) assume that the total size of the FM compartment stays constant i.e. N(t) = N0.
 
 The model directory has stan files for diffrent models. The scripts directory has Rscripts that call stan models and samples them across the data timeocurse so as to update the posterior distributions.
 

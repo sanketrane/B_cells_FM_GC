@@ -1,5 +1,7 @@
 .Rhistory
 
+*.RDS
+*.xlsx
 *.rds
 *.csv
 *.pdf
