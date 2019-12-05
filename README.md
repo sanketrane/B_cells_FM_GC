@@ -1,5 +1,3 @@
-
-
 FM and GC cells dynamics
 
 We aimed to quantify the dynamics of various subsets within mature B cell population and to understand the rules of replacement of old cells by that of new ones within each subset.
@@ -13,7 +11,7 @@ Models tested here:
     Simple Homoegenous model (SHM): constant rates of loss and division.
     Time-dependent model (TDM): Either loss or division varies with host-age.
     Kinetic heterogeneity model (KHM): Fast and Slow (with respect to their division and turnover) subsets within host and donor compartments.
-    Incumbnet model (INC): Fast and Slow (pre-existing) subsets only within host.
+    Incumbent model (INC): Fast and Slow (pre-existing) subsets only within host.
 
 We also tried variations withing each model by comparing different sources, by varying the rate of change of source influx with time and by keeping the rate of loss of Ki67 (beta) either free or fixed (1/3.5 days). Models begining with QSS (quassi steady state) assume that the total size of the FM compartment stays constant i.e. N(t) = N0.
 
