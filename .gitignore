@@ -1,0 +1,5 @@
+.Rhistory
+
+*.rds
+*.csv
+*.pdf
