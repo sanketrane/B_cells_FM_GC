@@ -1,9 +1,11 @@
 FM and GC cells dynamics
 
 ### coding
-The model directory has stan files for diffrent models. The scripts directory has Rscripts that call stan models and samples them across the data timeocurse so as to update the posterior distributions.
+The model directory has stan files for different models.
+The scripts directory has Rscripts that call stan models to fit on the data.
 
-sh files are designed to run the Rscripts in a batch mode so as to submit them as parallel jobs across multiple nodes on the local cluster at Yate's lab at CUMC, New York. The Rscript named "stan_plots.R" in the /scripts dircetory was used to complie and combine parallel jobs that ran on different nodes within the local cluster. The combined fitted object was then used to make inferences about parameter estimates, model suitability and plots for post-predictive analyses.
+sh files are designed to run the Rscripts in a batch mode in order to submit them as parallel jobs across multiple nodes on the local cluster at Yate's lab at CUMC, New York.
+The Rscript named "stan_plots.R" in the /scripts dircetory was used to complie and combine parallel jobs that ran on different nodes within the local cluster. The combined fitted object was then used to make inferences about parameter estimates, model suitability and plots for post-predictive analyses.
 
 ### Modelling 
 We aimed to quantify the dynamics of various subsets within mature B cell population and to understand the rules of replacement of old cells by that of new ones within each subset.
