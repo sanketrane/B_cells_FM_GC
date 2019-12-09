@@ -265,8 +265,8 @@ transformed parameters{
   real init_cond[4];
 
   real y0 = exp(y0_Log);
-  real lambda_calc = -log(deltaYFP)/(58 * exp(-r_d * 58));
-  real delta0 = lambda_calc + rho;
+  real<lower = 0> delta0 = (-log(deltaYFP) + rho * 58)/(58 * exp(-r_d * 58));
+  real lambda_calc =  delta0 - rho;
 
   init_cond[1] = Nd_0;
   init_cond[2] = Nd_0;
