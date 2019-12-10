@@ -235,7 +235,7 @@ functions{
    }
 
    y1 = log(counts);                                // transforming cell counts of donor compartments to feed in to ODEs
-   y2 = (Nfd);                                      // untransfored cell counts of donor fractions normalised to source chimerism to feed in to ODEs
+   y2 = logit_boundary_array(Nfd);                                      // untransfored cell counts of donor fractions normalised to source chimerism to feed in to ODEs
    y3 = logit_boundary_array(ki_donor);             // transforming counts of ki67 positive cells in the  donor compartments to feed in to ODEs
    y4 = logit_boundary_array(ki_host);              // transforming counts of ki67 positive cells in the  host compartments to feed in to ODEs
    }
@@ -306,7 +306,7 @@ model{
   sigma4 ~ normal(0.5, 1);
 
   y1 ~ normal(log(y1_mean), sigma1);
-  y2 ~ normal((y2_mean), sigma2);
+  y2 ~ normal(logit_boundary_array(y2_mean), sigma2);
   y3 ~ normal(logit_boundary_array(y3_mean), sigma3);
   y4 ~ normal(logit_boundary_array(y4_mean), sigma4);
 }
@@ -431,7 +431,7 @@ generated quantities{
   // calculating the log predictive accuracy for each point
   for (n in 1:numObs) {
     log_lik1[n] = normal_lpdf(y1[n] | log(y1_mean[n]), sigma1);
-    log_lik2[n] = normal_lpdf(y2[n] | (y2_mean[n]), sigma2);
+    log_lik2[n] = normal_lpdf(y2[n] | logit_boundary(y2_mean[n]), sigma2);
     log_lik3[n] = normal_lpdf(y3[n] | logit_boundary(y3_mean[n]), sigma3);
     log_lik4[n] = normal_lpdf(y4[n] | logit_boundary(y4_mean[n]), sigma4);
     log_lik[n] = log_lik1[n] + log_lik2[n] + log_lik3[n] + log_lik4[n];
