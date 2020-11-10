@@ -1,7 +1,7 @@
 FM and GC cells dynamics
 
 ### coding
-The model directory has stan files for different models.
+The models directory has stan files for different models.
 The scripts directory has Rscripts that call stan models to fit on the data.
 
 sh files are designed to run the Rscripts in a batch mode in order to submit them as parallel jobs across multiple nodes on the local cluster at Yate's lab at CUMC, New York.
