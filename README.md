@@ -1,4 +1,4 @@
-### Fate Mapping Quantifies the Dynamics of B Cell Development and Activation throughout Life
+## Fate Mapping Quantifies the Dynamics of B Cell Development and Activation throughout Life
 
 https://www.sciencedirect.com/science/article/pii/S2211124720313656
 
